@@ -1,0 +1,34 @@
+body {
+    background: #ffffff;
+}
+
+.card-parent {
+    width: 100vw;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.card-outline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #88AAFF;
+    width: 50%;
+    height: 50%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.card-inline {
+    border-radius: 4px;
+    background: #ffffff;
+    width: 97%;
+    height: 95%;
+    z-index: 3;
+}
