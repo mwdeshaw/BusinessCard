@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 15px;
     background: #88AAFF;
     width: 50%;
     height: 50%;
@@ -26,9 +26,35 @@ body {
 }
 
 .card-inline {
-    border-radius: 4px;
+    border-radius: 15px;
     background: #ffffff;
     width: 97%;
     height: 95%;
     z-index: 3;
+}
+
+#avatar-container {
+    margin: 20px;
+    border-radius: 50%;
+    z-index: 4;
+    background: #88AAFF;
+    width: 30%;
+    height: 55%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#img-back {
+    background: #ffffff;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%; 
+}
+
+img {
+    border-radius: 50%;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
 }
