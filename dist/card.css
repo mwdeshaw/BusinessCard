@@ -25,7 +25,7 @@ body {
     z-index: 2;
 }
 
-.card-inline {
+/* .card-inline {
     border-radius: 15px;
     background: #ffffff;
     width: 97%;
@@ -78,15 +78,12 @@ img {
 #last-name {
     color: #757575;
     font-size: 20px;
-}
+} */
 
-/* canvas {
+canvas {
     border-radius: 15px;
     background: #ffffff;
     width: 97%;
     height: 95%;
-    z-index: 3; */
-    /* display: grid;
-    grid-template: "a c b";
-    grid-template-columns: 1fr 10px 1fr; */
-/* } */
+    z-index: 3; 
+}
