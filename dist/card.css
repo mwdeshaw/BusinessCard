@@ -18,39 +18,135 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    background: #88AAFF;
+    /* background: #88AAFF; */
+    background:#0e6896;
     width: 50%;
     height: 50%;
     z-index: 2;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-#card {
+.card-inline {
+    border-radius: 15px;
+    background: #ffffff;
+    width: 97%;
+    height: 95%;
+    z-index: 3;
+    display: grid;
+    grid-template: "a b";
+    grid-template-columns: 1fr 1fr;
+}
+
+/* #card {
     border-radius: 15px;
     z-index: 3; 
     width: 100%;
     height: 100%;
     position: absolute;
     border: 8px solid #88AAFF;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.middle-circuits {
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+    z-index: 4;
 }
 
-/* .card-inline {
-    border-radius: 15px;
-    background: #ffffff;
-    width: 100%;
+.other-circuits {
+  height: 100%;
+  width: 100%;
+  grid-area: a;
+  z-index: 4;
+}
+
+.circuits {
     height: 100%;
-    z-index: 3; */
-    /* display: grid;
-    grid-template: "a c b";
-    grid-template-columns: 1fr 10px 1fr; */
-/* } */
+    width: 100%;
+    grid-area: a;z-index: 4;
+}
+
+.circuits path {
+    fill: none;
+    stroke:#0e6896;
+    stroke-width: 2px;
+    fill-opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-name: draw, fill;
+    animation-fill-mode: forwards;
+    animation-duration: 20s, 3s;
+    animation-delay: 1s, 9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite, initial;
+}
+
+.other-circuits path {
+    fill: none;
+    stroke:#0e6896;
+    stroke-width: 2px;
+    fill-opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-name: draw, fill;
+    animation-fill-mode: forwards;
+    animation-duration: 20s, 3s;
+    animation-delay: 1s, 9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite, initial;
+}
+
+.middle-circuits path {
+    fill: none;
+    stroke:#0e6896;
+    stroke-width: 2px;
+    fill-opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-name: draw, fill;
+    animation-fill-mode: forwards;
+    animation-duration: 20s, 3s;
+    animation-delay: 1s, 9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite, initial;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
 
 /*
 #avatar-container {
     margin: 20px;
     border-radius: 50%;
     z-index: 4;
-    background: #88AAFF;
+    background: 
     width: 65%;
     height: 60%;
     justify-content: center;
@@ -80,7 +176,7 @@ img {
 
 #name {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#0e6896;
+    color:
     font-size: 46px;
     position: relative;
 }
