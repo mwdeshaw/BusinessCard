@@ -216,14 +216,14 @@ body {
 }
 
 #line-2 {
-    z-index: 7;
+  z-index: 7;
 	border: #3f85a3 solid 10px;
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
 	border-bottom-color: transparent;
 	border-right-color: transparent;
-    position: absolute;
+  position: absolute;
 	animation: rota 5000ms linear;
   -o-animation: rota 5000ms linear;
   -moz-animation: rota 5000ms linear;
@@ -289,7 +289,6 @@ body {
     opacity: 0;
     animation-fill-mode: forwards;
     animation-duration: 3s, 3s;
-    /* animation-delay: 5000ms; */
     animation-delay: 3000ms;
     animation-name: picFill;
     animation-direction: alternate;
@@ -438,8 +437,9 @@ body {
     justify-content: flex-start;
     align-content: flex-start;
     flex-direction: column;
-    animation: fadein 2s;
-    animation: 4s slideLeft;
+    animation: fadein 1s ease-out, shrinkjump 1s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
 }
 
 .info i {
@@ -461,19 +461,6 @@ body {
     cursor: default;
 }
 
-/* @keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 100%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-} */
-
-
 .info a {
   text-decoration: none;
   color: #3f85a3;
@@ -483,9 +470,6 @@ body {
   color: lightblue;
 }
 
-.langs {
-  color: lightgrey;
-}
 
 .langs {
   list-style: none;
@@ -495,6 +479,7 @@ body {
   display: grid;
   grid-template: "e" "f" "g" "h";
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
 #1 {
@@ -534,7 +519,7 @@ body {
   padding-bottom: 2%;
   font-size: 1.1vw;
   animation: typing 3.5s steps(40, end), blink-caret 3.5s;
-  animation-delay: 4s;
+  animation-delay: 6s;
   animation-fill-mode: both;
   position: relative;
 }
@@ -574,31 +559,6 @@ body {
     to   { opacity: 1; }
 }
 
-#phone {
-    animation: shrinkjump 1s ease-in-out;
-}
-
-#email {
-    animation: falling 2s ease-out 2s;
-    animation: fadein 2s;
-
-}
-
-/* #phone {
-    animation: shrinkjump 1s ease-in-out;
-} */
-
-
-
-
-
-	/* 
-
-	animation: rotate 1s ease-out;
-
-  animation: toplong 1.5s linear; */
-
-
 @keyframes balance {
 	0%, 100% {
 		transform: rotate(0deg);
@@ -610,6 +570,16 @@ body {
 }
 
   @keyframes rotate {
+	20%, 80% {
+		transform: rotateY(180deg);
+	}
+	
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+  @keyframes rotate2 {
 	20%, 80% {
 		transform: rotateY(180deg);
 	}
