@@ -174,10 +174,21 @@ body {
     margin-left: 7%;
     background: #ffffff;
     animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 4s;
-    animation-name: fadeIn;
+    animation: fadeIn 4s ease-in;
+    animation: float 6s ease-in-out 5000ms infinite;
     opacity: 1;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0%);
+	}
+	50% {
+		transform: translatey(-5%);
+	}
+	100% {
+		transform: translatey(0%);
+	}
 }
 
 @keyframes fadeIn {
