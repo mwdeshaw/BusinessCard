@@ -18,7 +18,6 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    /* background: #88AAFF; */
     background:#0e6896;
     width: 50%;
     height: 50%;
@@ -75,7 +74,7 @@ body {
     stroke-dashoffset: 1000;
     animation-name: draw, fill;
     animation-fill-mode: forwards;
-    animation-duration: 20s, 3s;
+    animation-duration: 16s, 3s;
     animation-delay: 1s, 9s;
     animation-direction: alternate;
     animation-iteration-count: infinite, initial;
@@ -90,7 +89,7 @@ body {
     stroke-dashoffset: 1000;
     animation-name: draw, fill;
     animation-fill-mode: forwards;
-    animation-duration: 20s, 3s;
+    animation-duration: 16s, 3s;
     animation-delay: 1s, 9s;
     animation-direction: alternate;
     animation-iteration-count: infinite, initial;
@@ -105,7 +104,7 @@ body {
     stroke-dashoffset: 1000;
     animation-name: draw, fill;
     animation-fill-mode: forwards;
-    animation-duration: 20s, 3s;
+    animation-duration: 16s, 3s;
     animation-delay: 1s, 9s;
     animation-direction: alternate;
     animation-iteration-count: infinite, initial;
@@ -138,50 +137,122 @@ body {
   }
 }
 
-
-
-
-/*
 #avatar-container {
-    margin: 20px;
     border-radius: 50%;
-    z-index: 4;
-    background: 
+    z-index: 5;
+    position: relative;
     width: 65%;
     height: 60%;
     justify-content: center;
     display: flex;
     align-items: center;
     grid-area: a;
-}
-
-#img-back {
+    margin-top: 5%;
+    margin-left: 5%;
     background: #ffffff;
-    width: 90%;
-    height: 90%;
-    border-radius: 50%; 
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-name: fadeIn;
+    opacity: 1;
 }
 
-img {
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#line-1 {
+    z-index: 7;
+	border: #3f85a3 solid 10px;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border-top-color: transparent;
+	border-left-color: transparent;
+    position: absolute;
+	animation: rota2 5000ms linear;
+  -moz-animation: rota2 5000ms linear;
+  -o-animation: rota2 5000ms linear;
+  -webkit-animation: rota2 5000ms linear;
+}
+
+#line-2 {
+    z-index: 7;
+	border: #3f85a3 solid 10px;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+    position: absolute;
+	animation: rota 5000ms linear;
+  -o-animation: rota 5000ms linear;
+  -moz-animation: rota 5000ms linear;
+  -webkit-animation: rota 5000ms linear;
+}
+
+@keyframes rota2 {
+	from{ transform:rotate(-225deg);}
+	to { transform: rotate(-45deg);}
+}
+
+@-o-keyframes rota2 {
+	from{ transform:rotate(-225deg);}
+	to { transform: rotate(-45deg);}
+}
+
+@-moz-keyframes rota2 {
+	from{ transform:rotate(-225deg);}
+	to { transform: rotate(-45deg);}
+}
+@-webkit-keyframes rota2 {
+	from{ transform:rotate(-225deg);}
+	to { transform: rotate(-45deg);}
+}
+
+@keyframes rota {
+	from {transform: rotate(-45deg);}
+	to { transform: rotate(315deg);}
+}
+
+@-o-keyframes rota {
+	from {transform: rotate(-45deg);}
+	to { transform: rotate(315deg);}
+}
+
+@moz-keyframes rota {
+	from {transform: rotate(-45deg);}
+	to { transform: rotate(315deg);}
+}
+@-webkit-keyframes rota {
+	from {transform: rotate(-45deg);}
+	to { transform: rotate(315deg);}
+}
+
+#me {
     border-radius: 50%;
-    z-index: 5;
+    z-index: 6;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 3s, 3s;
+    animation-delay: 5000ms;
+    animation-name: picFill;
+    animation-direction: alternate;
+    animation-iteration-count: infinite, initial;
 }
 
-.text-parent {
-    padding: 20px;
-    grid-area: b;
+@keyframes picFill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-#name {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:
-    font-size: 46px;
-    position: relative;
-}
-
-#last-name {
-    color: #757575;
-    font-size: 20px;
-} */
