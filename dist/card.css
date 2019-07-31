@@ -36,6 +36,12 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+/* .name-header {
+    width: 100%;
+        height: 100%;
+
+}; */
+
 /* #card {
     border-radius: 15px;
     z-index: 3; 
@@ -62,8 +68,11 @@ body {
 .circuits {
     height: 100%;
     width: 100%;
-    grid-area: a;z-index: 4;
+    grid-area: a;
+    z-index: 4;
 }
+
+
 
 .circuits path {
     fill: none;
@@ -196,6 +205,17 @@ body {
   -webkit-animation: rota 5000ms linear;
 }
 
+.text-parent {
+    margin-top: 5%;
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+};
+
 @keyframes rota2 {
 	from{ transform:rotate(-225deg);}
 	to { transform: rotate(-45deg);}
@@ -210,6 +230,7 @@ body {
 	from{ transform:rotate(-225deg);}
 	to { transform: rotate(-45deg);}
 }
+
 @-webkit-keyframes rota2 {
 	from{ transform:rotate(-225deg);}
 	to { transform: rotate(-45deg);}
@@ -229,6 +250,7 @@ body {
 	from {transform: rotate(-45deg);}
 	to { transform: rotate(315deg);}
 }
+
 @-webkit-keyframes rota {
 	from {transform: rotate(-45deg);}
 	to { transform: rotate(315deg);}
@@ -248,6 +270,25 @@ body {
     animation-iteration-count: infinite, initial;
 }
 
+.name-header {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 52px;
+    display: flex;
+    /* align-content: center;
+    justify-content: center;  */
+}
+
+#first-name {
+    color:#a3a3a5;
+    font-weight: 700;
+}
+
+#last-name {
+    color: #3f85a3;
+    font-weight: 700;
+}
+
 @keyframes picFill {
   from {
     opacity: 0;
@@ -255,4 +296,9 @@ body {
   to {
     opacity: 1;
   }
+};
+
+
+#first-name {
+    
 }
