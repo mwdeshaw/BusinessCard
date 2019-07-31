@@ -304,14 +304,34 @@ body {
     font-size: 3vw;
 }
 
-#tagline {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 1.5vw;
+/* #tagline {
     color:#a3a3a5;
+} */
+
+#tagline{
+    width: auto;
+    display: inline-block;
+    color: #a3a3a5; 
+    overflow: hidden; 
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
     padding-bottom: 2%;
+    font-size: 1.5vw;
+    animation: typing 3.5s steps(40, end), blink-caret 3.5s;
 }
+
+@keyframes typing {
+  from { max-width: 0 }
+  to { max-width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #a3a3a5; }
+}
+
 
 #thing {
     width: 100%;
