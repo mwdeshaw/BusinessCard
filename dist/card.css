@@ -406,6 +406,7 @@ body {
     padding: 2%;
     font-size: 1.1vw;
     font-weight: 500;
+    cursor: default;
 }
 
 .langs {
