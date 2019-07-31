@@ -438,7 +438,7 @@ body {
     align-content: flex-start;
     flex-direction: column;
     animation: fadein 1s ease-out, shrinkjump 1s;
-    animation-delay: 5s;
+    animation-delay: 8s;
     animation-fill-mode: both;
 }
 
@@ -470,7 +470,6 @@ body {
   color: lightblue;
 }
 
-
 .langs {
   list-style: none;
   color: #3f85a3;
@@ -479,7 +478,6 @@ body {
   display: grid;
   grid-template: "e" "f" "g" "h";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
 #1 {
@@ -519,20 +517,21 @@ body {
   padding-bottom: 2%;
   font-size: 1.1vw;
   animation: typing 3.5s steps(40, end), blink-caret 3.5s;
-  animation-delay: 6s;
+  animation-delay: 7s;
   animation-fill-mode: both;
   position: relative;
 }
 
 .langs li {
   font-size: 1vw;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
+  -webkit-animation: toplong 2s;
+  -moz-animation: toplong 2s;
+  -ms-animation: toplong 2s;
+  -o-animation: toplong 2s;
+  animation: fadein 2s, toplong 2s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
 }
-
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -605,11 +604,11 @@ body {
 
 @keyframes toplong {
 	10%, 40% {
-		transform: translateY(-48vh) scaleY(1);
+		transform: translateY(-10vh) scaleY(1);
 	}
 	
 	90% {
-		transform: translateY(-48vh) scaleY(4);
+		transform: translateY(-10vh) scaleY(4);
 	}
 }
 
