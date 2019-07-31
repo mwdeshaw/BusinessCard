@@ -33,7 +33,7 @@ body {
     z-index: 3;
     display: grid;
     grid-template: "a b";
-    grid-template-columns: 1fr 1fr 0.18fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* #card {
@@ -60,6 +60,13 @@ body {
 }
 
 .circuits {
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+    z-index: 4;
+}
+
+.circuits-right {
     height: 100%;
     width: 100%;
     grid-area: a;
@@ -111,6 +118,21 @@ body {
     animation-iteration-count: infinite, initial;
 }
 
+.circuits-right path {
+    fill: none;
+    stroke:#0e6896;
+    stroke-width: 2px;
+    fill-opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-name: draw, fill;
+    animation-fill-mode: forwards;
+    animation-duration: 16s, 3s;
+    animation-delay: 1s, 9s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite, initial;
+}
+
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
@@ -142,14 +164,14 @@ body {
     border-radius: 50%;
     z-index: 5;
     position: relative;
-    width: 65%;
+    width: 55%;
     height: 55%;
     justify-content: center;
     display: flex;
     align-items: center;
     grid-area: a;
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 7%;
+    margin-left: 7%;
     background: #ffffff;
     animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -205,7 +227,7 @@ body {
     z-index: 4;
     align-items: flex-start;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 };
 
 @keyframes rota2 {
@@ -274,29 +296,32 @@ body {
     color:#a3a3a5;
     font-weight: 700;
     font-size: 3vw;
-    padding-bottom: 2%;
 }
 
 #last-name {
     color: #3f85a3;
     font-weight: 700;
     font-size: 3vw;
-    padding-bottom: 2%;
 }
 
 #tagline {
-    font-size: 1vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.5vw;
     color:#a3a3a5;
-    font-weight: 700;
+    padding-bottom: 2%;
 }
 
 #fun-line {
     border-bottom: 1px solid #a3a3a5;
     width: 100%;
+    margin-right: 20%;
     position: relative;
     align-content: flex-end;
     justify-content: flex-end;
     display: flex;
+    flex-direction: column;
 }
 
 @keyframes picFill {
