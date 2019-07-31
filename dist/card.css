@@ -437,35 +437,35 @@ i:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* .langs li {
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-  animation: fadein 2s;
-  font-size: 1.0vw;
-} */
 
 #1 {
   grid-area: e;
+  padding-right: 5%;
 }
 
 #2 {
   grid-area: f;
+  padding-right: 5%;
 
 }
 
 #3 {
   grid-area: g;
+  padding-right: 5%;
 
 }
 
 #4 {
   grid-area: h;
+  padding-right: 5%;
 
 }
 
-.langs h1 {
+#skills-parent {
+  width: 100%;
+}
+
+#skills {
   padding-top: 4%;
   width: auto;
   display: inline-block;
@@ -483,6 +483,11 @@ i:hover {
 
 .langs li {
   font-size: 1vw;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 @keyframes fadein {
