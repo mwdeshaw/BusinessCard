@@ -36,15 +36,6 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-/* #card {
-    border-radius: 15px;
-    z-index: 3; 
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border: 8px solid #88AAFF;
-} */
-
 .middle-circuits {
     height: 100%;
     width: 100%;
@@ -322,7 +313,6 @@ body {
   }
 }
 
-
 #last-name {
     color: #3f85a3;
     font-weight: 700;
@@ -396,7 +386,34 @@ body {
     padding-top: 2%;
     float: right;
     margin-right: 40%;
+    animation: fadein 1s, qrThing 2s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
 }
+
+@keyframes qrThing {
+  10% {
+    transform:scaleY(0.2);
+    transform-origin:0 bottom 0;
+  }
+  20% {
+    transform:scaleY(1.3);
+    transform-origin:0 bottom 0;
+  }
+  30% {
+    transform:scaleY(0.7);
+    transform-origin:0 bottom 0;
+  }
+  40% {
+    transform:scaleY(1);
+    transform-origin:0 bottom 0;
+  }
+  100% {
+    transform:scaleY(1);
+    transform-origin:0 bottom 0;
+  }
+}
+
 
 #fun-line {
     border-bottom: 1px solid #a3a3a5;
@@ -438,7 +455,7 @@ body {
     align-content: flex-start;
     flex-direction: column;
     animation: fadein 1s ease-out, shrinkjump 1s;
-    animation-delay: 8s;
+    animation-delay: 9s;
     animation-fill-mode: both;
 }
 
@@ -517,7 +534,7 @@ body {
   padding-bottom: 2%;
   font-size: 1.1vw;
   animation: typing 3.5s steps(40, end), blink-caret 3.5s;
-  animation-delay: 7s;
+  animation-delay: 8s;
   animation-fill-mode: both;
   position: relative;
 }
@@ -529,7 +546,7 @@ body {
   -ms-animation: toplong 2s;
   -o-animation: toplong 2s;
   animation: fadein 2s, toplong 2s;
-  animation-delay: 5s;
+  animation-delay: 6s;
   animation-fill-mode: both;
 }
 
