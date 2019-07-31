@@ -304,10 +304,6 @@ body {
     font-size: 3vw;
 }
 
-/* #tagline {
-    color:#a3a3a5;
-} */
-
 #tagline{
     width: auto;
     display: inline-block;
@@ -331,7 +327,6 @@ body {
   from, to { border-color: transparent }
   50% { border-color: #a3a3a5; }
 }
-
 
 #thing {
     width: 100%;
@@ -379,7 +374,7 @@ body {
     justify-content: flex-end;
 }
 
-.bottom-nav li {
+/* .bottom-nav li {
     z-index: 5;
     list-style: none;
     display: inline-block;
@@ -391,24 +386,126 @@ body {
     z-index: 6;
     height: 100%;
     grid-area: b;
-}
-
+} */
+/* 
 i:hover {
     color:#a3a3a5;
     cursor: pointer;
-}
+} */
 
 .info {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
     color: black;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
 }
 
-.info a {
-    color: black;
-}
-
-.info a:hover {
+.info i {
     color:#a3a3a5;
+    font-size: 1vw;
+    padding-right: 8%;
+}
+
+.info i:hover {
     cursor: pointer;
+    color: lightgrey;
+}
+
+.info li {
+    color: #3f85a3;
+    padding: 2%;
+    font-size: 1.25vw;
+    font-weight: 500;
+}
+
+.langs {
+    color: lightgrey;
+}
+
+.langs {
+  list-style: none;
+  color: #3f85a3;
+  font-size: 1vw;
+  font-weight: 500;
+  display: grid;
+  grid-template: "e" "f" "g" "h";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* .langs li {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+  font-size: 1.0vw;
+} */
+
+#1 {
+  grid-area: e;
+}
+
+#2 {
+  grid-area: f;
+
+}
+
+#3 {
+  grid-area: g;
+
+}
+
+#4 {
+  grid-area: h;
+
+}
+
+.langs h1 {
+  padding-top: 4%;
+  width: auto;
+  display: inline-block;
+  color: #a3a3a5; 
+  overflow: hidden; 
+  border-right: .15em solid transparent;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  padding-bottom: 2%;
+  font-size: 1.1vw;
+  animation: typing 3.5s steps(40, end), blink-caret 3.5s;
+  position: relative;
+}
+
+.langs li {
+  font-size: 1vw;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
