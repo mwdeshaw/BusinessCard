@@ -7,7 +7,7 @@ CardSite combines two things, a business card and a personal site. A unique take
 ## Features
 * #### CSS animations create a dynamic and visually impressive product; animations managed with a time-based control flow
 * #### Working icons, allowing for calls, emails, and visits to Github or LinkedIn on click
-* #### Fully resonsive design works on mobile phones
+* #### Near fully responsive
 * #### Scannable QR code redirects the user to the launch url
 
 ## Requirements
@@ -115,7 +115,7 @@ What use is a business card if one cannot use it to contact the issuer? CardSite
 The ```mailto:``` tag opens up an email addressed to the issuer in the user's default mail app on click. As for the ```tel:``` tag, clicking it allows the user to instantly call the number shown. No longer do users have to hand-copy information off a business card to actually utilize it.
 
  ## Future Directions
-* #### Make even more responsive by specifically creating a mobile-specific layout
+* #### Improve mobile responsivity, namely in the vertical view
 * #### Add a back side, so the card could be flipped over, which would feature other content, likely projects
 * #### Find API to integrate it with Apple Wallet
 
