@@ -587,7 +587,7 @@ body {
 	}
 	
 	45%, 50% {
-		transform: scale(1) translate(0, -150px);
+		transform: scale(1) translate(0, -10%);
 	}
 	
 	80% {
