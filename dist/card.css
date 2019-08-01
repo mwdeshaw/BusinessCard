@@ -604,3 +604,15 @@ body {
 		transform: translateY(-10vh) scaleY(4);
 	}
 }
+
+@media only screen and (max-width: 600px) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+} 
