@@ -605,20 +605,14 @@ body {
 	}
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: #ffffff;
-    transform: rotate(90deg)
-  }
-  
-  #avatar-container {
-    transform: rotate(90deg);
-  }
-
-  #me {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  html {
     transform: rotate(-90deg);
-
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
-
-
-}
+} 
