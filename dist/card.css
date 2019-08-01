@@ -36,6 +36,58 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .card-inline {
+    border-radius: 15px;
+    background: #ffffff;
+    width: 95%;
+    height: 97%;
+    z-index: 3;
+    display: grid;
+    grid-template: "a b";
+    grid-template-columns: 1fr 1fr;
+    grid-template: "a" "b";
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+/* 
+@media only screen and (max-width: 600px) {
+  .middle-circuits {
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+    z-index: 4;
+    transform: rotate(90deg);
+  }
+
+.other-circuits {
+  height: 100%;
+  width: 100%;
+  grid-area: a;
+  z-index: 4;
+  transform: rotate(90deg)
+
+}
+
+.circuits {
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+    z-index: 4;
+    transform: rotate(90deg)
+}
+
+.circuits-right {
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+    z-index: 4;
+    transform: rotate(90deg)
+  }
+} */
+
+
+
 .middle-circuits {
     height: 100%;
     width: 100%;
@@ -199,7 +251,7 @@ body {
 	border-radius: 50%;
 	border-top-color: transparent;
 	border-left-color: transparent;
-    position: absolute;
+  position: absolute;
 	animation: rota2 5000ms linear;
   -moz-animation: rota2 5000ms linear;
   -o-animation: rota2 5000ms linear;
@@ -603,4 +655,22 @@ body {
 	90% {
 		transform: translateY(-10vh) scaleY(4);
 	}
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #ffffff;
+    transform: rotate(90deg)
+  }
+  
+  #avatar-container {
+    transform: rotate(90deg);
+  }
+
+  #me {
+    transform: rotate(-90deg);
+
+  }
+
+
 }
