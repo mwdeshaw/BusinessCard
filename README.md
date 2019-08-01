@@ -1,6 +1,6 @@
 # [CardSite](https://mwdeshaw.github.io/BusinessCard/)
 
-![card]()
+![card](https://github.com/mwdeshaw/BusinessCard/blob/master/bizCardGif.gif)
 
 CardSite combines two things, a business card and a personal site, into one. A unique take on the traditional business card and personal site, it is created in HTML/CSS. The project entails abundant use of SVGs, CSS animations, and CSS grids.
 
