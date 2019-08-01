@@ -18,7 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    background:#0e6896;
+    background:#3f85a3;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -66,7 +66,7 @@ body {
 
 .circuits path {
     fill: none;
-    stroke:#0e6896;
+    stroke:#3f85a3;
     stroke-width: 2px;
     fill-opacity: 0;
     stroke-dasharray: 1000;
@@ -81,7 +81,7 @@ body {
 
 .other-circuits path {
     fill: none;
-    stroke:#0e6896;
+    stroke:#3f85a3;
     stroke-width: 2px;
     fill-opacity: 0;
     stroke-dasharray: 1000;
@@ -96,7 +96,7 @@ body {
 
 .middle-circuits path {
     fill: none;
-    stroke:#0e6896;
+    stroke:#3f85a3;
     stroke-width: 2px;
     fill-opacity: 0;
     stroke-dasharray: 1000;
@@ -111,7 +111,7 @@ body {
 
 .circuits-right path {
     fill: none;
-    stroke:#0e6896;
+    stroke:#3f85a3;
     stroke-width: 2px;
     fill-opacity: 0;
     stroke-dasharray: 1000;
@@ -381,7 +381,8 @@ body {
     z-index: 6;
     height: 14%;
     grid-area: b;
-    padding-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     float: right;
     margin-right: 45%;
     animation: fadein 1s, qrThing 2s;
