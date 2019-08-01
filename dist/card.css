@@ -470,7 +470,7 @@ body {
 
 .info li {
     color: #3f85a3;
-    padding: 2%;
+    padding: 1%;
     font-size: 2.5vw;
     cursor: default;
 }
@@ -607,7 +607,4 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   html { orientation: landscape } 
-.info {
-  padding: 0;
-}
 }
