@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     flip.onclick = () => {
         back.classList.remove("flip");
         front.classList.add("flip");
+        const vid1 = document.querySelector(".break-mov");
+        vid1.onmouseover = () => {
+            vid1.play();
+        }
+        vid1.onmouseout = () => {
+            vid1.pause();
+        }
     }
 
     skillsNew.onclick = () => {

@@ -33,38 +33,67 @@
 
 .proj-title {
     grid-area: a;
-}
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3f85a3;
+    font-weight: 700;
+    font-size: 5vw;
+};
 
 .break {
     grid-area: b;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#vid-parent {
+    width: 100%;
+    height: auto;
+    background: #3f85a3;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#vid-parent video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+
 }
 
 .notable {
     grid-area: c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .starfighter {
     grid-area: d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-
+#proj-header {
+    color: #3f85a3;
+    font-weight: 700;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #skills-parent-2 {
     display: none;
 }
-
-/* #skills-2 {
-  padding-top: 3%;
-  width: auto;
-  display: inline-block;
-  color: #a3a3a5; 
-  border-right: .15em solid transparent;
-  white-space: nowrap;
-  margin: 0 auto;
-  padding-bottom: 2%;
-  font-size: 2.5vw;
-  animation: typing 3.5s steps(40, end), blink-caret 3.5s;
-  animation-delay: 8s;
-  animation-fill-mode: both;
-  position: relative;
-} */
