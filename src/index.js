@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const flip = document.getElementById("skills");
-    const front = document.querySelector(".card-inline");
+    const front = document.querySelector(".card-outline");
     const back = document.querySelector(".back");
     const skillsNew = document.getElementById("skills-new");
 
