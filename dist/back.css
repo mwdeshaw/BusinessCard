@@ -10,26 +10,37 @@
     backface-visibility: hidden;
     position: absolute;
     transform-style: preserve-3d;
-
 }
 
 .back.flip {
-    transform: rotateY(-180deg);
+    transform: rotateY(180deg);
     transform-style: preserve-3d;
     transition: all 1.0s linear;
     backface-visibility: hidden;
 }
 
-#skills-parent-2 {
-  width: 100%;
+.back-fill {
+    border-radius: 15px;
+    background: #ffffff;
+    width: 97%;
+    height: 95%;
+    z-index: 3;
+    display: grid;
+    grid-template-areas: "a a a" "b c d" "e e e";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-#skills-2 {
+
+#skills-parent-2 {
+    display: none;
+}
+
+/* #skills-2 {
   padding-top: 3%;
   width: auto;
   display: inline-block;
   color: #a3a3a5; 
-  overflow: hidden; 
   border-right: .15em solid transparent;
   white-space: nowrap;
   margin: 0 auto;
@@ -39,5 +50,4 @@
   animation-delay: 8s;
   animation-fill-mode: both;
   position: relative;
-}
-
+} */
