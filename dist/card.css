@@ -23,6 +23,7 @@ body {
     height: 100%;
     z-index: 2;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    perspective: 1000;
 }
 
 .card-inline {
@@ -34,6 +35,15 @@ body {
     display: grid;
     grid-template: "a b";
     grid-template-columns: 1fr 1fr;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card-inline.flip {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    backface-visibility: hidden;
 }
 
 .middle-circuits {
