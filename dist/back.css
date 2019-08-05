@@ -31,6 +31,23 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+.proj-title {
+    grid-area: a;
+}
+
+.break {
+    grid-area: b;
+}
+
+.notable {
+    grid-area: c;
+}
+
+.starfighter {
+    grid-area: d;
+}
+
+
 
 #skills-parent-2 {
     display: none;
