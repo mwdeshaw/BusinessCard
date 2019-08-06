@@ -45,6 +45,7 @@ body {
     display: grid;
     grid-template: "a b";
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 .middle-circuits {
