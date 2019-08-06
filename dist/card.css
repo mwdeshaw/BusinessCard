@@ -41,7 +41,7 @@ body {
     background: #ffffff;
     width: 97%;
     height: 95%;
-    z-index: 3;
+    z-index: 4;
     display: grid;
     grid-template: "a b";
     grid-template-columns: 1fr 1fr;
@@ -51,28 +51,28 @@ body {
     height: 100%;
     width: 100%;
     grid-area: a;
-    z-index: 4;
+    z-index: 3;
 }
 
 .other-circuits {
   height: 100%;
   width: 100%;
   grid-area: a;
-  z-index: 4;
+  z-index: 3;
 }
 
 .circuits {
     height: 100%;
     width: 100%;
     grid-area: a;
-    z-index: 4;
+    z-index: 3;
 }
 
 .circuits-right {
     height: 100%;
     width: 100%;
     grid-area: a;
-    z-index: 4;
+    z-index: 3;
 }
 
 .circuits path {
